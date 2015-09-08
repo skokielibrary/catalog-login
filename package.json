@@ -1,0 +1,15 @@
+{
+  "name": "spl-catalog-login",
+  "version": "1.0.0",
+  "description": "Login page for catalog/encore",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Skokie Public Library",
+  "license": "N/A",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.0.4"
+  }
+}
