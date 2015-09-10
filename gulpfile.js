@@ -4,7 +4,7 @@ var gulp = require('gulp'), 
 
 var config = {
     sass_path: 'src/assets/scss',
-    css_path: 'dist/assets/css',
+    css_path: 'dist',
     js_src_path: 'src/assets/js/src',
     js_path: 'dist/assets/js',
     bower_dir: 'bower_components',
