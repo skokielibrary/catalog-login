@@ -1,0 +1,171 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Lato);
+
+@charset "utf-8";
+/* IPSSO Login CSS Mobile */
+
+*, *:before, *:after{
+  box-sizing: border-box;
+}
+
+body{
+  background: lighten($primary-color, 68%);
+  font: 400 16px/1.4 $body-font-family;
+  color: $body-font-color;
+}
+
+div, p, td, th, blockquote, li{
+  font-family: $body-font-family !important;
+}
+
+a:link {
+  color:$secondary-color;
+}
+
+a:active, a:visited, a:hover {
+  color:darken($secondary-color, 20%);
+}
+
+.clearfloats {
+  clear:both;
+}
+
+.errors {
+  background:$warning-color;
+  border:0;
+  color:inherit;
+  font-weight:normal;
+  margin:0 0.8em 1em;
+  padding:0.5em;
+}
+
+.loginArea {
+  padding-top:.5em;
+  font-size:.85em;
+}
+
+.loginArea fieldset {
+  border:none;
+}
+
+.loginField {
+  font-size:1.25em;
+  margin:2px 0px 10px 0;
+  padding:2px;
+  text-align:left;
+  width:220px;
+}
+
+fieldset .barcodeAltChoice {
+  margin:1.2em 0;
+  padding:0;
+}
+
+fieldset .newpin {
+  margin-top:1em;
+  padding:0
+}
+
+.formButtons div {
+  display:inline;
+}
+
+.loginActionScreenOnly, .loginActionSeparator, .loginActionText {
+  display:none;
+}
+
+.loginAction {
+  display: block !important;
+  margin:3rem 0 10px 0 !important;
+}
+
+.loginAction a {
+  background:url("arrow.gif") 95% center no-repeat #ececec;
+  border-top:1px solid #ffffff;
+  color: $secondary-color !important;
+  display:block;
+  font-weight:bold;
+  height:25px;
+  padding:10px 0 0 10px;
+  text-decoration:none;
+}
+
+.loginArea form {
+  margin:.8em auto 0 auto;
+  text-align:left;
+}
+
+.loginArea label {
+  display:block;
+  font-weight: normal !important;
+}
+
+.loginArea legend {
+  font-family: $header-font-family !important;
+  color:$alert-color;
+  padding:0;
+  font-size:1.9em;
+  font-weight: normal !important;
+  text-transform: uppercase;
+}
+
+.barcodeAltChoice legend, .newpin legend {
+  font-size:1em;
+  margin-bottom:.5em;
+  font-style:normal;
+}
+
+div #login_ldap {
+  border-bottom:1px solid #686868;
+  margin-bottom:1em;
+}
+
+#login_ldap .loginSubmit {
+  float:right;
+  position:relative;
+  top:-3em;
+}
+
+#login .loginSubmit {
+  float:right;
+  position:relative;
+  top:-3em;
+}
+
+.loginTop {
+  background:#FFFFFF;
+  text-align:center;
+}
+
+.loginTopLogo {
+  margin: 0 auto 1em !important;
+  padding-bottom:1em;
+}
+
+.loginTopLogo img {
+  border:none;
+}
+
+.loginActionText{
+  display: block !important;
+  margin-bottom: .5rem;
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* sprite button */
+.formButtons a {
+  display:none;
+}
+
+/* Overrides to prevent possible conflict with styles.css */
+
+body > div {
+  background:none;
+  padding-bottom:0;
+  padding-top:0;
+}
+
+div{
+  font-family: inherit !important;
+  font-size: inherit !important;
+}

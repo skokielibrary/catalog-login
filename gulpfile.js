@@ -3,7 +3,7 @@ var gulp = require('gulp'), 
   minifycss = require('gulp-minify-css')
 
 var config = {
-    sass_path: 'src/assets/scss',
+    sass_path: 'src/scss',
     css_path: 'dist',
     js_src_path: 'src/assets/js/src',
     js_path: 'dist/assets/js',
@@ -21,7 +21,7 @@ gulp.task('sass', function () {
 
 //watch sass for changes
 gulp.task('watch', function() {
-  gulp.watch('src/assets/scss/*.scss', ['sass']);
+  gulp.watch('src/scss/*.scss', ['sass']);
 });
 
 gulp.task('build', ['sass']);
