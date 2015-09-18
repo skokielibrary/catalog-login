@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Lato:400,700" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/apps/CAS/resources/styles.css">
 </head>
 <body>
   <header role="banner">
@@ -16,34 +16,20 @@
       </a>
     </div>
   </header>
-  <main role="main">
-    <div class="container">
-      <div class="form">
+  <div class="container">
+    <main role="main">
         <h1>My Account</h1>
         <p class="required-msg"><span class="required">*</span> indicates a required field.</p>
-        <form id="login-form" action="/iii/cas/login" method="post">
-          <div id="field_last_name" class="field">
-            <label for="id_last_name">Last name
-              <span class="required">*</span>
-            </label>
-             <input id="id_last_name" name="last_name" type="text">
-          </div>
-          <div id="field_barcode" class="field">
-            <label for="id_barcode">Barcode
-              <span class="required">*</span>
-            </label>
-             <input id="id_barcode" name="barcode" type="text">
-          </div>
+        <form id="fm1" action="/iii/cas/login" method="post">
           <input type="submit" class="button" value="Submit">
         </form>
-      </div>
-      <div class="aside">
+    </main>
+    <aside role="complementary">
         <h3>New to the library?</h3>
-        <p>Sign up for a library card and take advantage of everything Skokie Public Library has to offer.</p>
-        <p><a href="https://skokielibrary.info/about/library-cards/">Sign up now</a></p>
-      </div>
-    </div>
-  </main>
+        <p>Apply for a library card and take advantage of everything Skokie Public Library has to offer.</p>
+        <p><a href="https://skokielibrary.info/about/library-cards/">Apply now</a></p>
+    </aside>
+  </div>
   <footer role="contentinfo">
     <div class="container">
       <a href="http://skokielibrary.info" class="stamp">
