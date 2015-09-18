@@ -1,6 +1,11 @@
 header{
   height: 120px;
-  background-color: $white
+  background-color: $white;
+
+  .container{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .brand{
