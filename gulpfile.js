@@ -1,6 +1,7 @@
 var gulp = require('gulp'), 
   sass = require('gulp-sass') ,
-  minifycss = require('gulp-minify-css')
+  minifycss = require('gulp-minify-css'),
+  browserSync = require('browser-sync').create();
 
 var config = {
     sass_path: 'src/scss',
@@ -18,12 +19,24 @@ gulp.task('sass', function () {
     .pipe(gulp.dest(config.css_path))
 });
 
+// Static server
+gulp.task('browser-sync', ['sass'], function() {
+    browserSync.init({
+        server: {
+            baseDir: "./dist"
+        }
+    });
+});
+
+gulp.task('reload', function(){
+  browserSync.reload();
+})
 
 //watch sass for changes
 gulp.task('watch', function() {
-  gulp.watch('src/scss/*.scss', ['sass']);
+  gulp.watch('src/scss/*.scss', ['sass', 'reload']);
 });
 
 gulp.task('build', ['sass']);
 
-gulp.task('default', ['sass', 'watch']);
+gulp.task('default', ['sass', 'browser-sync', 'watch']);
