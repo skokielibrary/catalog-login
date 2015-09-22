@@ -1,4 +1,5 @@
 .container{
+  box-sizing: content-box;
   max-width: #{$max-width};
   margin: auto;
   padding: 3.7rem .9375rem;
